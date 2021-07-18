@@ -1,4 +1,5 @@
 import Article from "../components/Article";
+import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <Article
         title="Hay un lugar donde 'podría' salir el sol para todos..."
+        alt="Plaza de armas del pueblo de moche en un dia soleado"
         url="https://detrujillo.com/wp-content/uploads/2012/04/plaza-de-armas-moche-de-trujillo-com.jpg"
         right
         content={[`A lo largo de las últimas décadas Moche ha sido un pueblo que ha experimentado un gran cambio
@@ -16,6 +18,7 @@ export default function Home() {
       />
       <Article
         alter
+        alt="Trabajadores en huelga reclamando mejores oportunidades laborales"
         title="Para ganarse el pan de cada día"
         url="https://diariouno.pe/wp-content/uploads/2019/03/09-24.jpg"
         content={[
@@ -27,6 +30,7 @@ export default function Home() {
           conseguir un trabajo digno y bien remunerado. Sin tener la necesidad de competir en el mercado a costa de bajarse el sueldo`
         ]}
       />
+      <Carousel images={[{ src: "https://diariouno.pe/wp-content/uploads/2019/03/09-24.jpg", alt: "vaina" }, { src: "https://diariouno.pe/wp-content/uploads/2019/03/09-24.jpg", alt: "vaina" }]} base={25} />
     </>
   )
 }

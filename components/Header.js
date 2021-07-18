@@ -29,7 +29,7 @@ function Header() {
     <Stack as="header" w="100%" bg="red.700" alignItems="center">
       <Heading py="3" fontStyle="italic" color="orange.200" fontSize="3xl">Pateando Latas</Heading>
       <NavBar />
-      <IconButton onClick={scrollUp} boxShadow="0 0 0.4rem #000" rounded="full" position="fixed" w="14" h="14" right="4" bottom="6" transitionDuration="200ms" bgColor="orange.300" opacity={scrolled ? "100" : "0"}>
+      <IconButton zIndex="popover" onClick={scrollUp} boxShadow="0 0 0.4rem #000" rounded="full" position="fixed" w="14" h="14" right="4" bottom="6" transitionDuration="200ms" bgColor="orange.300" opacity={scrolled ? "100" : "0"}>
         <FontAwesomeIcon style={{ fontSize: "3rem" }} icon={faCaretUp} />
       </IconButton>
     </Stack>
