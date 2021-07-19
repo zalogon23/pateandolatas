@@ -1,7 +1,8 @@
 import React from 'react'
 import NavBar from './NavBar'
-import { Heading, IconButton, Stack, Image, HStack, Circle } from '@chakra-ui/react'
+import { Heading, IconButton, Stack, Image, HStack, Circle, Button } from '@chakra-ui/react'
 import { useEffect } from 'react'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
@@ -27,10 +28,14 @@ function Header() {
   return (
     <Stack as="header" w="100%" bg="red.700" alignItems="center">
       <HStack w="full" justifyContent="center" position="relative">
-        <Circle w={["1.5rem", "2.3rem", "3rem"]} h={["1.5rem", "2.3rem", "3rem"]} position="absolute" left={["1.5rem", , "3rem"]} top={["35%","27%"]} bgColor="white">
-          <Image w={["2rem", "3rem", "4.5rem"]} h={["2rem", "3rem", "4.5rem"]} src="/logo.png" maxWidth="auto" />
-        </Circle>
-        <Heading py={["4", , "10"]} fontStyle="italic" color="orange.200" fontSize={["2xl", , "4xl"]}>Pateando Latas</Heading>
+        <Link href="/">
+          <IconButton aria-label="Ir a inicio" rounded="full" bgColor="red.700" variant="ghost" w={["1.6rem", "2.4rem", "3.1rem"]} h={["1.6rem", "2.4rem", "3.1rem"]} position="absolute" left={["1.5rem", , "3rem"]} top={["35%", "27%"]}>
+            <Circle transitionDuration="300ms" _hover={{ bgColor: "yellow.300" }} cursor="pointer" w={["1.5rem", "2.3rem", "3rem"]} h={["1.5rem", "2.3rem", "3rem"]} bgColor="orange.500">
+              <Image transitionDuration="350ms" transform="auto" _hover={{ rotate: "-55deg" }} w={["2rem", "3rem", "4.5rem"]} h={["2rem", "3rem", "4.5rem"]} src="/logo.png" maxWidth="9999px" />
+            </Circle>
+          </IconButton>
+        </Link>
+        <Heading fontFamily="cursive" py={["4", , "10"]} fontStyle="italic" color="orange.200" fontSize={["2xl", , "4xl"]}>Pateando Latas</Heading>
       </HStack>
       <NavBar />
       <IconButton zIndex="popover" onClick={scrollUp} boxShadow="0 0 0.4rem #000" rounded="full" position="fixed" w="14" h="14" right="4" bottom="6" transitionDuration="200ms" bgColor="orange.200" opacity={scrolled ? "100" : "0"}>

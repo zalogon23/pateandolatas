@@ -22,7 +22,7 @@ export default function Carousel({ images, measures }) {
             images.map((image, id) => (
               <Box key={id} as="article" position="relative" h="full" bg w={`${imageWidth}%`}>
                 {image.description && <Heading as="h3" size="md" bgColor="red.800" p="2" color="white" zIndex="modal" position="absolute" top="0" left="0">{image.description}</Heading>}
-                <Box position="absolute" top="0" left="0" w="full" h="full" bgImage={image.src} bgSize="250%" bgRepeat="no-repeat" bgPosition="center" style={{ filter: "brightness(40%)" }} />
+                <Box position="absolute" top="0" left="0" w="full" h="full" bgImage={image.src} bgSize="250%" bgRepeat="no-repeat" bgPosition="center" style={{ filter: "blur(3px) brightness(60%)" }} />
                 <Image fallbackSrc="/loading.jpg" position="absolute" top="0" left="0" h="full" fit="contain" w="full" src={image.src} />
               </Box>
             ))

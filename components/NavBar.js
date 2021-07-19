@@ -8,17 +8,17 @@ function NavBar() {
   return (
     <HStack py="1" px="10" w="full" bg="red.800" spacing="10" justifyContent={["space-around", "flex-end"]}>
       <Link href="/">
-        <IconButton marginInline="0" fontSize={["lg", "xl", "2xl"]} bgColor="red.800" color="orange.200" variant="solid">
+        <IconButton aria-label="Ir a inicio" marginInline="0" fontSize={["lg", "xl", "2xl"]} bgColor="red.800" color="orange.200" variant="solid">
           <FontAwesomeIcon icon={faHome} />
         </IconButton>
       </Link>
       <Link href="/guias">
-        <IconButton marginInline="0" fontSize={["lg", "xl", "2xl"]} bgColor="red.800" color="orange.200" variant="solid">
+        <IconButton aria-label="Ir a guias" marginInline="0" fontSize={["lg", "xl", "2xl"]} bgColor="red.800" color="orange.200" variant="solid">
           <FontAwesomeIcon icon={faRoute} />
         </IconButton>
       </Link>
       <Link href="/locales">
-        <IconButton marginInline="0" fontSize={["lg", "xl", "2xl"]} bgColor="red.800" color="orange.200" variant="solid">
+        <IconButton aria-label="Ir a locales" marginInline="0" fontSize={["lg", "xl", "2xl"]} bgColor="red.800" color="orange.200" variant="solid">
           <FontAwesomeIcon icon={faMosque} />
         </IconButton>
       </Link>
