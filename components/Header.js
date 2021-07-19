@@ -38,9 +38,11 @@ function Header() {
         <Heading fontFamily="cursive" py={["4", , "10"]} fontStyle="italic" color="orange.200" fontSize={["2xl", , "4xl"]}>Pateando Latas</Heading>
       </HStack>
       <NavBar />
-      <IconButton zIndex="popover" onClick={scrollUp} boxShadow="0 0 0.4rem #000" rounded="full" position="fixed" w="14" h="14" right="4" bottom="6" transitionDuration="200ms" bgColor="orange.200" opacity={scrolled ? "100" : "0"}>
-        <FontAwesomeIcon style={{ fontSize: "3rem" }} icon={faCaretUp} />
-      </IconButton>
+      {scrolled &&
+        <IconButton aria-label="Ir a la parte superior de la pagina" zIndex="popover" onClick={scrollUp} boxShadow="0 0 0.4rem #000" rounded="full" position="fixed" w="14" h="14" right="4" bottom="6" bgColor="orange.200">
+          <FontAwesomeIcon style={{ fontSize: "3rem" }} icon={faCaretUp} />
+        </IconButton>
+      }
     </Stack>
   )
 
