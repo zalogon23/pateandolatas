@@ -29,13 +29,13 @@ function Header() {
     <Stack as="header" w="100%" bg="red.700" alignItems="center">
       <HStack w="full" justifyContent="center" position="relative">
         <Link href="/">
-          <IconButton aria-label="Ir a inicio" rounded="full" bgColor="red.700" variant="ghost" w={["1.6rem", "2.4rem", "3.1rem"]} h={["1.6rem", "2.4rem", "3.1rem"]} position="absolute" left={["1.5rem", , "3rem"]} top={["35%", "27%"]}>
-            <Circle transitionDuration="300ms" _hover={{ bgColor: "yellow.300" }} cursor="pointer" w={["1.5rem", "2.3rem", "3rem"]} h={["1.5rem", "2.3rem", "3rem"]} bgColor="orange.500">
-              <Image transitionDuration="350ms" transform="auto" _hover={{ rotate: "-55deg" }} w={["2rem", "3rem", "4.5rem"]} h={["2rem", "3rem", "4.5rem"]} src="/logo.png" maxWidth="9999px" />
+          <IconButton aria-label="Ir a inicio" rounded="full" bgColor="red.700" variant="ghost" w={["2.4rem",, "3.1rem"]} h={["2.4rem",, "3.1rem"]} position="absolute" left={["1.5rem", , "3rem"]} top="27%">
+            <Circle transitionDuration="300ms" _hover={{ bgColor: "yellow.300" }} cursor="pointer" w={["2.3rem",, "3rem"]} h={["2.3rem",, "3rem"]} bgColor="orange.500">
+              <Image transitionDuration="350ms" transform="auto" _hover={{ rotate: "-55deg" }} w={["3rem",, "4.5rem"]} h={["3rem",, "4.5rem"]} src="/logo.png" maxWidth="9999px" />
             </Circle>
           </IconButton>
         </Link>
-        <Heading fontFamily="cursive" py={["4", , "10"]} fontStyle="italic" color="orange.200" fontSize={["2xl", , "4xl"]}>Pateando Latas</Heading>
+        <Heading py={["4", , "10"]} fontStyle="italic" color="orange.200" fontSize={["2xl", , "4xl"]}>Pateando Latas</Heading>
       </HStack>
       <NavBar />
       {scrolled &&
