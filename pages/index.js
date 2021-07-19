@@ -1,6 +1,7 @@
+import { Square } from "@chakra-ui/react";
 import Article from "../components/Article";
-import Carousel from "../components/Carousel";
 import Header from "../components/Header";
+import Carousel from "../components/Carousel";
 import TitleWith from "../components/TitleWith";
 
 export default function Home() {
@@ -31,11 +32,13 @@ export default function Home() {
           conseguir un trabajo digno y bien remunerado. Sin tener la necesidad de competir en el mercado a costa de bajarse el sueldo`
         ]}
       />
-      <TitleWith title="Marcas locales que han trabajado con nosotros">
+      <TitleWith title="Marcas con las que hemos trabajado:">
         <Carousel images={[
           { description: "El camote!", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/123243342_4484197551655449_8796211097237859554_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=973b4a&_nc_ohc=1d5QKmbmrw4AX89IfuE&_nc_ht=scontent.fepa4-1.fna&oh=b1dfe9ccbd9369d2cf15c72bea10f59e&oe=60FA251E", alt: "mi camote el camote moche ceviche mariscos sudado chicharron" },
           { description: "Burguer House", src: "https://10619-2.s.cdn12.com/rests/original/106_504365429.jpg", alt: "burguer house tienda hamburguesas broaster parrilla carne" },
-        ]} base={25} />
+          { description: "El camote!", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/123243342_4484197551655449_8796211097237859554_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=973b4a&_nc_ohc=1d5QKmbmrw4AX89IfuE&_nc_ht=scontent.fepa4-1.fna&oh=b1dfe9ccbd9369d2cf15c72bea10f59e&oe=60FA251E", alt: "mi camote el camote moche ceviche mariscos sudado chicharron" },
+          { description: "Burguer House", src: "https://10619-2.s.cdn12.com/rests/original/106_504365429.jpg", alt: "burguer house tienda hamburguesas broaster parrilla carne" }
+        ]} measures={{ w: "full", h: ["20rem", "40rem"], maxW: ["full", , , "2xl"] }} />
       </TitleWith>
     </>
   )
