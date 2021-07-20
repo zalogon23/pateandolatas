@@ -2,11 +2,13 @@ import { Divider } from '@chakra-ui/react'
 import React from 'react'
 import Article from '../../components/Article'
 import Footer from '../../components/Footer'
+import CustomHead from "../../components/CustomHead";
 import Header from '../../components/Header'
 
 function Cursos() {
   return (
     <>
+      <CustomHead title="Cursos" keywords="pateando latas capacitaciones trabajo estudio cursos capacitar curso" description="Ponemos a tu disposición los siguientes cursos para que desarrolles las labores que están en mayor demanda en la actualidad." />
       <Header />
       <Article
         alter

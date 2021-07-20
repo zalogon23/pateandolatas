@@ -4,10 +4,12 @@ import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import TitleWith from "../components/TitleWith";
 import Footer from "../components/Footer";
+import CustomHead from "../components/CustomHead";
 
 export default function Home() {
   return (
     <>
+      <CustomHead title="Inicio" keywords="pateando latas inicio capacitaciones trabajo estudio capacitar curso" description="En pateando latas nos interesa que estes capacitado para solventar las necesidades del mundo moderno. Capacitandote para que puedas desarrollar páginas web, filmar, crear guiones, etc..." />
       <Header />
       <Article
         title="Hay un lugar donde va a haber oportunidades para todos..."
