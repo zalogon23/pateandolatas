@@ -9,7 +9,7 @@ function Footer() {
       <GoogleMaps maxW={["3xl", , , "5xl"]} />
       <SocialMedia />
       <Divider />
-      <Square><Link py="2" href="Me%20gustaria%20consultar%20el%20precio%20de%20una%20pagina%20sobre...%20(describir)">Desarrollado por <Text fontWeight="bold" as="span" color="red.500">Virtualizar</Text></Link></Square>
+      <Square><Link py="2" href="https://api.whatsapp.com/send?phone=541135775481&text=Me%20gustaria%20consultar%20el%20precio%20de%20una%20pagina%20sobre...%20(describir)">Desarrollado por <Text fontWeight="bold" as="span" color="red.500">Virtualizar</Text></Link></Square>
     </Box>
   )
 }

@@ -27,7 +27,7 @@ function index() {
           `Pasando por detalles técnicos como los planos, los tipos de lentes de cámara. Iluminación, vestuario.`,
           `Como ambientar una buena escena, no solo eligiendo el lugar indicado, sino la banda sonora adecuada también.`,
           `Decidir las metáforas correctas para conmover realmente al espectador, entre otras.`,
-          { link: "#", to: "Consultar" }
+          { link: "https://api.whatsapp.com/send?phone=541135775481&text=Me%20gustaria%20consultarles%20sobre%20el%20curso%20de%20filmado%20y%20guion", to: "Consultar" }
         ]}
       />
       <Divider />
@@ -40,7 +40,7 @@ function index() {
           `Aquí veremos como construir un sitio web con las últimas tecnologías que no solo te facilitarán el proceso de construcción, sino que también te brindarán la chance de personalizarlo tanto como quieras.`,
           `Empezamos desde lo mas básico de HTML y CSS (Lenguajes para dar formato al contenido). Para luego introducirnos en Javascript (Lenguaje de programación como tal con el que se da dinamismo al sitio).`,
           `Y será luego de esta buena base que nos adentraremos en el uso de React, Next.js, Chakra UI, entre muchas otras herramientas que nos permitirán desarrollar sitios en un santiamén.`,
-          { link: "#", to: "Consultar" }
+          { link: "https://api.whatsapp.com/send?phone=541135775481&text=Me%20gustaria%20consultarles%20sobre%20el%20curso%20de%20desarrollo%20web", to: "Consultar" }
         ]}
       />
       <Divider />
@@ -53,7 +53,7 @@ function index() {
           `Descubrirás las técnicas y prácticas que se llevan a cabo para trabajar de forma maleable el cuero, entre otros materiales, para tapizar tanto sillas, como muebles. Incluyendo asientos de vehículo o puffs.`,
           `Los materiales con los que se puede tapizar son de una amplia variedad. Cualquier tipo de tela es usable. Pero recomendamos el cuero por su aspecto distintivo y su facilidad de trabajo.`,
           `Si lo tuyo son mas las labores manuales y estéticas, está es una muy buena oportunidad para plasmar un buen diseño en algún mueble que tengas por casa y necesite una restauración.`,
-          { link: "#", to: "Consultar" }
+          { link: "https://api.whatsapp.com/send?phone=541135775481&text=Me%20gustaria%20consultarles%20sobre%20el%20curso%20de%20tapiceria", to: "Consultar" }
         ]}
       />
       <Footer />
