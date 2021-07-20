@@ -27,9 +27,9 @@ function Header() {
 
   return (
     <Stack as="header" w="100%" bg="red.700" alignItems="center">
-      <HStack w="full" justifyContent="center" position="relative">
+      <HStack spacing="0" w="full" justifyContent="center" position="relative">
         <Link href="/">
-          <IconButton aria-label="Ir a inicio" rounded="full" bgColor="red.700" variant="ghost" w={["2.4rem",, "3.1rem"]} h={["2.4rem",, "3.1rem"]} position="absolute" left={["1.5rem", , "3rem"]} top="27%">
+          <IconButton display={["none",,"block"]} aria-label="Ir a inicio" rounded="full" bgColor="red.700" variant="ghost" w={["2.4rem",, "3.1rem"]} h={["2.4rem",, "3.1rem"]} position="absolute" left={["1.5rem", , "3rem"]} top="27%">
             <Circle transitionDuration="300ms" _hover={{ bgColor: "yellow.300" }} cursor="pointer" w={["2.3rem",, "3rem"]} h={["2.3rem",, "3rem"]} bgColor="orange.500">
               <Image transitionDuration="350ms" transform="auto" _hover={{ rotate: "-55deg" }} w={["3rem",, "4.5rem"]} h={["2.8rem",, "4.1rem"]} src="/logo.png" maxWidth="9999px" />
             </Circle>
