@@ -1,6 +1,6 @@
 import { Button, HStack } from '@chakra-ui/react'
 import Link from "next/link"
-import { faHome, faMosque, faRoute } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faPhone, faRoute } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
@@ -12,14 +12,14 @@ function NavBar() {
           Inicio
         </Button>
       </Link>
-      <Link href="/guias">
-        <Button leftIcon={<FontAwesomeIcon icon={faRoute} />} aria-label="Ir a guias" fontSize={["md", "lg", "xl"]} bgColor="red.800" color="orange.200" variant="solid">
-          Guías
+      <Link href="/cursos">
+        <Button leftIcon={<FontAwesomeIcon icon={faRoute} />} aria-label="Ir a cursos" fontSize={["md", "lg", "xl"]} bgColor="red.800" color="orange.200" variant="solid">
+          Cursos
         </Button>
       </Link>
-      <Link href="/locales">
-        <Button leftIcon={<FontAwesomeIcon icon={faMosque} />} aria-label="Ir a locales" fontSize={["md", "lg", "xl"]} bgColor="red.800" color="orange.200" variant="solid">
-          Locales
+      <Link href="/contacto">
+        <Button leftIcon={<FontAwesomeIcon icon={faPhone} />} aria-label="Ir a contacto" fontSize={["md", "lg", "xl"]} bgColor="red.800" color="orange.200" variant="solid">
+          Contacto
         </Button>
       </Link>
     </HStack>

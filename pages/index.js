@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <Article
-        title="Hay un lugar donde 'podría' salir el sol para todos..."
+        title="Hay un lugar donde va a haber oportunidades para todos..."
         alt="Plaza de armas del pueblo de moche en un dia soleado"
         url="https://detrujillo.com/wp-content/uploads/2012/04/plaza-de-armas-moche-de-trujillo-com.jpg"
         right
@@ -31,20 +31,9 @@ export default function Home() {
           de la actualidad (grabación, desarrollo web, marketing, cinematografía, etc). Para que no debas estar tanteando al azar una labor que no te da los ingresos necesarios.`,
           `Nuestro objetivo, junto contigo, es formar cada vez a mas pobladores de Moche, para que tengan las herramientas mentales necesarias. Que les permitan
           conseguir un trabajo digno y bien remunerado. Sin tener la necesidad de competir en el mercado a costa de bajarse el sueldo`,
-          { link: "/locales", to: "Visítanos" }
+          { link: "/contacto", to: "Contáctanos" }
         ]}
       />
-      <TitleWith pb="3" title="Marcas con las que hemos trabajado:">
-        <Carousel images={[
-          { description: "El camote!", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/123243342_4484197551655449_8796211097237859554_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=973b4a&_nc_ohc=1d5QKmbmrw4AX89IfuE&_nc_ht=scontent.fepa4-1.fna&oh=b1dfe9ccbd9369d2cf15c72bea10f59e&oe=60FA251E", alt: "Entrada del restaurant mi camote, mismo que ofrece ceviche, chicharron y sudado" },
-          { description: "Tapiceria gutierrez", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/124572658_3514815885271047_8001171296407523026_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=4SjTU-ulSe8AX8FsBUt&tn=lVSg02l-G6S0C4J1&_nc_ht=scontent.fepa4-1.fna&oh=e9bdab3a9700d45c2c8354f696fdbf97&oe=60FBE1DF", alt: "Sillas tapizadas con cuero blanco. Cortesia de la tapiceria gutierrez" },
-          { description: "Burguer House", src: "https://10619-2.s.cdn12.com/rests/original/106_504365429.jpg", alt: "Hamburguesas de Burguer House de carne con condimentos y cremas" },
-          { description: "Santy Pan", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.18169-9/15109620_1031349060326981_4348547481641688186_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=e3f864&_nc_ohc=xZifg8R6kOkAX-VjHbi&_nc_ht=scontent.fepa4-1.fna&oh=b956a6973d1fb5bb61f17b9cf2e00f52&oe=60F9A3B7", alt: "Entrada de la panaderia Santy Pan, una de las panaderias mas importantes de moche junto con Don Pedro" },
-        ]} measures={{ w: "full", h: ["20rem", "35rem"], maxW: ["3xl", , , "5xl"] }} />
-      </TitleWith>
-
-      <Divider />
-
       <Article
         alt="Grupo de patenado latas, se puede ver a Miguel, Dario, Kike, Lishner"
         title="Como podemos ayudarte"
@@ -57,9 +46,18 @@ export default function Home() {
           `Ya que al final del día, nada nos llenaría mas que ver a todos nuestros conciudadanos mocheros tener mayores oportunidades de salir adelante.`,
           { title: "En resumen!" },
           `Te damos una cordial bienvenida de parte de 'Pateando Latas'.`,
-          { to: "Contáctanos", link: "/guias" }
+          { to: "Ver cursos", link: "/cursos" }
         ]}
       />
+      <Divider />
+      <TitleWith pb="3" title="Marcas locales que nos avalan:">
+        <Carousel images={[
+          { description: "El camote!", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/123243342_4484197551655449_8796211097237859554_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=973b4a&_nc_ohc=1d5QKmbmrw4AX89IfuE&_nc_ht=scontent.fepa4-1.fna&oh=b1dfe9ccbd9369d2cf15c72bea10f59e&oe=60FA251E", alt: "Entrada del restaurant mi camote, mismo que ofrece ceviche, chicharron y sudado" },
+          { description: "Tapiceria gutierrez", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/124572658_3514815885271047_8001171296407523026_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=4SjTU-ulSe8AX8FsBUt&tn=lVSg02l-G6S0C4J1&_nc_ht=scontent.fepa4-1.fna&oh=e9bdab3a9700d45c2c8354f696fdbf97&oe=60FBE1DF", alt: "Sillas tapizadas con cuero blanco. Cortesia de la tapiceria gutierrez" },
+          { description: "Burguer House", src: "https://10619-2.s.cdn12.com/rests/original/106_504365429.jpg", alt: "Hamburguesas de Burguer House de carne con condimentos y cremas" },
+          { description: "Santy Pan", src: "https://scontent.fepa4-1.fna.fbcdn.net/v/t1.18169-9/15109620_1031349060326981_4348547481641688186_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=e3f864&_nc_ohc=xZifg8R6kOkAX-VjHbi&_nc_ht=scontent.fepa4-1.fna&oh=b956a6973d1fb5bb61f17b9cf2e00f52&oe=60F9A3B7", alt: "Entrada de la panaderia Santy Pan, una de las panaderias mas importantes de moche junto con Don Pedro" },
+        ]} measures={{ w: "full", h: ["20rem", "35rem"], maxW: ["3xl", , , "5xl"] }} />
+      </TitleWith>
       <Footer />
     </>
   )
