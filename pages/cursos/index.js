@@ -61,4 +61,4 @@ function Cursos() {
   )
 }
 
-export default index
+export default Cursos

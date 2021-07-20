@@ -18,4 +18,4 @@ function Contacto() {
   )
 }
 
-export default index
+export default Contacto
