@@ -34,7 +34,6 @@ function Cursos() {
       />
       <Divider />
       <Article
-        right
         title="Desarrollo Web"
         alt="Clases de desarrollo web, una computadora con un editor de texto abierto"
         url="/webdev.jpg"
