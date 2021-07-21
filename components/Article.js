@@ -24,6 +24,9 @@ function Article({ id, main, right, content, title, url, alter, alt }) {
         <Box px="3" fontSize={["sm", , "md", "xl"]} color={themes[theme].pgColor}>
           <Image alt={alt} src={url} fallbackSrc="/loading.jpg" rounded="lg" w={["full", , , "lg"]} float={{ "lg": right ? "right" : "left" }} mb="5" mt={{ "lg": "3" }} marginLeft={{ "lg": right ? "8" : "0" }} marginRight={{ "lg": !right ? "8" : "0" }} />
           {content.map((paragraph, id) => {
+            if(paragraph.heading){
+              return (<Heading key={id} py="2" fontSize={["xl", "3xl", "5xl"]}>{paragraph.heading}</Heading>)
+            }
             if (paragraph.title) {
               return (<Heading key={id} py="2" fontSize={["lg", "xl", "2xl"]}>{paragraph.title}</Heading>)
             }
