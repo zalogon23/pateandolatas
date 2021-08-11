@@ -14,7 +14,7 @@ function Cursos() {
         alter
         title="Cursos y capacitaciones"
         alt="Un dia de grabacion con miembros del equipo de pateando latas. En la foto el tio guti"
-        url="https://scontent.fepa4-1.fna.fbcdn.net/v/t1.6435-9/50885286_2482986838410113_5928489619485097984_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=2bZ6-MrBKykAX9zOTP3&_nc_ht=scontent.fepa4-1.fna&oh=cbef3fb4eed112f0bf6f05a101906641&oe=60FBC2DC"
+        url="/playing.jpg"
         content={[
           `Si lo que quieres es capacitarte en diversas áreas que en la actualidad están en alta demanda laboral. U optar un por un camino mas tradicional y aprender oficios variados.`,
           `Te dejamos con nuestro catalogo de cursos para que elijas el que sea de tu agrado:`]}

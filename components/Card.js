@@ -14,7 +14,7 @@ function Card({ title, src, icon, iconColor, content, to, link, btnBg, btnColor,
         {src && <Image src={src} fallbackSrc="/loading.jpg" />}
       </Square>
       <Text h={[, pgMaxH]} overflow="auto" fontSize={["md", "lg", , "xl"]} pt="8" pb="4">{content}</Text>
-      {to && link && <Button p="4" _hover={{ bgColor: iconColor }} fontSize={["md", "lg", , "xl"]} bg={btnBg || "black"} color={btnColor || "white"} aria-label={to}><Link href={link}>{to}</Link></Button>}
+      {to && link && <Button display="flex" justifyContent="center" alignItems="center" p="4" _hover={{ bgColor: iconColor }} fontSize={["md", "lg", , "xl"]} bg={btnBg || "black"} color={btnColor || "white"} aria-label={to}><Link href={link}>{to}</Link></Button>}
     </Box>
   )
 }
